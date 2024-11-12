@@ -1,0 +1,264 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling untuk halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f7f9; /* Latar belakang yang lembut */
+}
+
+/* Gaya untuk header */
+.header {
+  background-image: url('/images/ikan.jpg'); /* Gantilah dengan URL gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px; /* Memberikan ruang ekstra untuk konten */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi teks dengan efek ketikan */
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  overflow: hidden; /* Menggunakan overflow tersembunyi untuk efek ketikan */
+  border-right: .15em solid #fff; /* Garis vertikal di kanan teks */
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0; /* Awalnya teks tersembunyi */
+  animation: typing 4s steps(30) 1s forwards; /* Ketikan animasi */
+  color: #fff;
+}
+
+/* Gaya tombol CTA */
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #aecefa;
+}
+
+.features h2 {
+  color: #0004ff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.feature p {
+  text-align: justify;
+  font-size: 1em;
+  color: #555;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* CRUD Section Style */
+#crud {
+  background-color: rgb(249, 230, 207);
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#crud h2 {
+  font-size: 1.8em;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#crud p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.crud-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.crud-links a {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #007BFF;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.crud-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #crud {
+      width: 90%;
+  }
+
+  .crud-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .crud-links a {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Goals Section */
+.goals {
+  padding: 60px 20px;
+  background-color: #afdbed;
+  text-align: center;
+}
+
+.goals h2 {
+  color: #0004ff;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.goals p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5deccb6;
+}
+
+.contact h2 {
+  color: #0004ff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.contact ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.contact li {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* CSS untuk tombol Logout */
+.logout-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-logout {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004fa3; /* Warna merah untuk logout */
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-logout:hover {
+  background-color: #007bff; /* Warna merah lebih gelap saat hover */
+  transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+.btn-logout:focus {
+  outline: none; /* Menghilangkan outline saat tombol mendapatkan fokus */
+}
+
+.btn-logout:active {
+  background-color: #011428; /* Warna merah saat tombol ditekan */
+}
+

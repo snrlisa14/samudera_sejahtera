@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Nelayan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesedit.css">
+</head>
+<body>
+    <h1>Edit Nelayan</h1>
+    <div class="container mt-4">
+        <div class="alert alert-info text-center" role="alert">
+            Silakan edit detail nelayan di bawah ini.
+        </div>
+        <form action="/edit" method="POST">
+            <label for="nama">Nama Nelayan:</label>
+            <input type="text" id="nama" name="nama" value="<%= nelayan.nama %>" required class="form-control">
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" value="<%= nelayan.alamat %>" required class="form-control">
+
+            <button type="submit" class="btn btn-primary mt-3">Simpan Perubahan</button>
+        </form>
+        <a href="/auth/profile" class="btn btn-link">Kembali ke Daftar Nelayan</a>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
